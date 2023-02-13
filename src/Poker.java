@@ -13,8 +13,11 @@ import java.util.Random;
 public class Poker {
 
     public Poker() {
-        System.out.printf("%d %d %d %d %d \n",getRoll(),getRoll(),getRoll(),getRoll(),getRoll());
-        System.out.printf("%d %d %d %d %d \n",getRoll(),getRoll(),getRoll(),getRoll(),getRoll());
+        ize("Te: ");
+        ize("Gép: ");
+    }
+    public void ize(String msg){
+        System.out.printf("%s %d %d %d %d %d \n",msg,getRoll(),getRoll(),getRoll(),getRoll(),getRoll());
     }
     public int getRoll(){
         Random random = new Random();
